@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 — Patch
+
+- Updated example app configuration and documentation
+
 ## 1.0.0 — Initial Release
 
 ### Features
