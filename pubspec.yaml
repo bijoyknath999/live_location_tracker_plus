@@ -1,0 +1,40 @@
+name: live_location_tracker_plus
+description: "A Flutter plugin for live background location tracking with geofencing, Firebase sync, and battery optimization. Supports Android foreground service and iOS background modes."
+version: 1.0.0
+homepage: https://github.com/bijoyknath999/live_location_tracker_plus
+repository: https://github.com/bijoyknath999/live_location_tracker_plus
+issue_tracker: https://github.com/bijoyknath999/live_location_tracker_plus/issues
+
+topics:
+  - location
+  - gps
+  - geofence
+  - tracking
+  - background
+
+environment:
+  sdk: ^3.10.4
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: io.github.bijoyknath.live_location_tracker_plus
+        pluginClass: LiveLocationTrackerPlusPlugin
+      ios:
+        pluginClass: LiveLocationTrackerPlusPlugin
+
+false_secrets:
+  - /example/android/app/src/main/AndroidManifest.xml
+  - /example/ios/Runner/AppDelegate.swift
