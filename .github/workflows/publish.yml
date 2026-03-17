@@ -1,0 +1,34 @@
+# Publish to pub.dev when a version tag is pushed
+# Setup: Go to https://pub.dev/packages/live_location_tracker_plus/admin
+#        → Enable "Publishing from GitHub Actions"
+#        → Set repository: bijoyknath999/live_location_tracker_plus
+#        → Set tag pattern: v{{version}}
+
+name: Publish to pub.dev
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write # Required for OIDC authentication with pub.dev
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Analyze
+        run: dart analyze --fatal-infos
+
+      - name: Publish
+        run: dart pub publish --force
