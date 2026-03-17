@@ -300,25 +300,6 @@ flutter run
 
 ---
 
-## 🚀 Publishing
-
-This package uses **GitHub Actions** for automated publishing to pub.dev. To release a new version:
-
-```bash
-# 1. Update version in pubspec.yaml (e.g. 1.0.2)
-# 2. Update CHANGELOG.md with what's new
-# 3. Commit your changes
-git add -A && git commit -m "v1.0.2"
-
-# 4. Create a version tag
-git tag v1.0.2
-
-# 5. Push with tags — this auto-publishes to pub.dev!
-git push origin main --tags
-```
-
----
-
 ## 📄 License
 
 MIT License. See [LICENSE](LICENSE) for details.
