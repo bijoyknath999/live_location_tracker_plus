@@ -11,9 +11,9 @@ Live Location Tracker Plus provides real-time background location tracking,
 geofence monitoring (enter/exit/dwell), optional Firebase Firestore sync,
 and battery-optimized tracking modes for iOS and Android.
                        DESC
-  s.homepage         = 'https://github.com/bijoy-deb/live_location_tracker_plus'
+  s.homepage         = 'https://github.com/bijoyknath999/live_location_tracker_plus'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Bijoy Dev' => 'bijoy@example.com' }
+  s.author           = { 'Bijoy Kumar Nath' => 'bijoykumarnath999@gmail.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'

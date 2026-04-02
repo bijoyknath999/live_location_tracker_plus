@@ -43,7 +43,7 @@ SPEC CHECKSUMS:
   google_maps_flutter_ios: 0cf046caf50b00d95071f79e8031fcd5ef902beb
   GoogleMaps: 8939898920281c649150e0af74aa291c60f2e77d
   integration_test: 4a889634ef21a45d28d50d622cf412dc6d9f586e
-  live_location_tracker_plus: 262529f62b629d38abff91b390af9ce1483f1910
+  live_location_tracker_plus: 44a0a392b06c250efd6359f1fa6badc797369ec9
 
 PODFILE CHECKSUM: 070de2152ec312b61aa596061af7020ef0060d79
 

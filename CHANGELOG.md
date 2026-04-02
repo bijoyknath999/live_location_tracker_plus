@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2 — Patch
+
+- Updated plugin author info and metadata
+
 ## 1.0.1 — Patch
 
 - Updated example app configuration and documentation
